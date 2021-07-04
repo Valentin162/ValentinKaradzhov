@@ -61,6 +61,7 @@ nav.nav {
 				&:hover, &:focus {
 					color: $gray;
 					background: white;
+					border-bottom: 5px solid #ffcb0f;
 					transition: color 0.5s, background-color 0.5s;
 				}
 
