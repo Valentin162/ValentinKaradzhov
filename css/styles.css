@@ -1,5 +1,71 @@
+/* general */
+* {
+  box-sizing: border-box;
+}
+
 body {
-  font-family: Verdana;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  padding: 0;
+  margin: 0;
+  background-color: #006642;
+  color: #444;
+}
+
+/* header */
+header.header {
+  background: #1c1c1c;
+  color: white;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  height: auto;
+  position: sticky;
+  top: 0;
+}
+header.header h1 {
+  margin: 0 1em;
+  text-align: center;
+}
+
+/* nav */
+nav.nav {
+  padding: 0;
+}
+nav.nav ul.links {
+  list-style: none;
+  font-size: 0;
+}
+nav.nav ul.links li {
+  display: inline-block;
+  margin-left: -4px;
+  padding-left: 0;
+  font-size: 1rem;
+  vertical-align: middle;
+  margin-bottom: 0;
+  height: 54px;
+}
+nav.nav ul.links li a {
+  color: white;
+  text-decoration: none;
+  padding: 15px;
+  display: block;
+  margin-bottom: 0;
+  height: 100%;
+  cursor: pointer;
+}
+nav.nav ul.links li a:hover, nav.nav ul.links li a:focus {
+  color: #444;
+  background: white;
+  transition: color 0.5s, background-color 0.5s;
+}
+nav.nav ul.links li a img {
+  vertical-align: middle;
+  display: inline-block;
+}
+
+/* main */
+main.page {
+  background: white;
 }
 
 /*# sourceMappingURL=styles.css.map */
