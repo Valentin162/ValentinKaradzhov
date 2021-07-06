@@ -1,0 +1,23 @@
+@import '../mixins-variables.scss';
+
+footer.footer {
+	color: white;
+	text-align: center;
+	@include hyperlinks;
+
+	li {
+		margin-right: 10px;
+		font-size: 1.1rem;
+	}
+
+	a {
+
+		&:hover, &:focus {
+			text-decoration: underline;
+		}
+	}
+
+	p {
+		font-weight: bold;
+	}
+}

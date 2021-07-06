@@ -1,0 +1,19 @@
+@import '../mixins-variables.scss';
+main.page {
+	background: $blue;
+	margin-top: 0;
+	
+	div.container {
+		background: white;
+		max-width: 90%;
+		display: block;
+		margin: 0 auto;
+	}
+
+	img {
+		max-width: 100%;
+		max-height: 100%;
+	}
+
+	
+}

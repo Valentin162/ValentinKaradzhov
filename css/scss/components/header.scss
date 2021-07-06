@@ -1,0 +1,20 @@
+@import '../mixins-variables.scss';
+header.header {
+	background: #1c1c1c;
+	color: white;
+	@include flex-center(true);
+	column-gap: 100px;
+	height: auto;
+	margin: 0;
+	h1 {
+		margin: 0 1em;
+		text-align: center;
+
+		a {
+			color: white;
+			text-decoration: none;
+		}
+		
+	}
+	@include sticky;
+}

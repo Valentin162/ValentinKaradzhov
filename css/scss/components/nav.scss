@@ -1,0 +1,33 @@
+@import '../mixins-variables.scss';
+
+nav.nav {
+	margin: 0;
+	padding: 0;
+	ul.links {
+		@include hyperlinks(true);
+		margin-bottom: 0;
+		li {
+			height: 54px;
+			margin-bottom: 0;
+			a {
+				padding: 15px;
+				margin-bottom: 0;
+
+				&:hover, &:focus {
+					color: $gray;
+					background: white;
+					border-bottom: 5px solid #ffcb0f;
+					transition: color 0.5s, background-color 0.5s;
+				}
+
+				img {
+					vertical-align: middle;
+					display: inline-block;
+				
+				}
+			}
+		}
+	}
+
+	margin-bottom: 0;
+}
