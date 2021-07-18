@@ -92,14 +92,50 @@ section.introduction {
 	a {
 		padding: 10px;
 		@include link-button;
-	
+		
 	}
 }
 
 /* about me */
 
 .about-me {
+
+	.image {
+		width: 400%;
+	}
 	.about {
 		@include flex-center;
+		@include flex-vertical-center;
+
+		@media only screen and (max-width: 1300px) {
+			.image {
+				width: 100%;
+				@include flex-center;
+			}
+			flex-direction: column;
+
+			.info {
+				order: 3;
+			}
+		}
+
+		p {
+			padding: 10px;
+		}
+
+		img {
+			margin-bottom: 2em;
+		}
+
+		div.info {
+			text-align: center;
+		}
+
+		p {
+			width: 99%;
+			display: inline-block;
+			text-align: left;
+			font-size: 1.2rem;
+		}
 	}
 }

@@ -89,6 +89,7 @@ main.page div.container {
   max-width: 90%;
   display: block;
   margin: 0 auto;
+  padding: 10px;
 }
 main.page img {
   max-width: 100%;
@@ -117,6 +118,7 @@ footer.footer li {
 }
 footer.footer a:hover, footer.footer a:focus {
   text-decoration: underline;
+  vertical-align: middle;
 }
 footer.footer p {
   font-weight: bold;
@@ -220,9 +222,42 @@ section.introduction img {
 }
 
 /* about me */
+.about-me .image {
+  width: 400%;
+}
 .about-me .about {
   display: flex;
   justify-content: center;
+  display: flex;
+  align-items: center;
+}
+@media only screen and (max-width: 1300px) {
+  .about-me .about {
+    flex-direction: column;
+  }
+  .about-me .about .image {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+  .about-me .about .info {
+    order: 3;
+  }
+}
+.about-me .about p {
+  padding: 10px;
+}
+.about-me .about img {
+  margin-bottom: 2em;
+}
+.about-me .about div.info {
+  text-align: center;
+}
+.about-me .about p {
+  width: 99%;
+  display: inline-block;
+  text-align: left;
+  font-size: 1.2rem;
 }
 
 /*# sourceMappingURL=styles.css.map */
